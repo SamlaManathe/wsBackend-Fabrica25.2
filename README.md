@@ -4,7 +4,7 @@
 
 Este projeto é uma aplicação Django que gerencia os Estados do Brasil, suas respectivas culturas e seus pontos turísticos. Além disso, consome a API do IBGE para listar os municípios de cada estado.
 
-<img style="display: block; margin: 0 auto;" width="50%" height="25%" alt="Interface" src="https://github.com/user-attachments/assets/11fab228-5f26-47a9-9cb6-000ad65038b8" />
+<img style="display: flex; align-items: center;" width="50%" height="25%" alt="Interface" src="https://github.com/user-attachments/assets/11fab228-5f26-47a9-9cb6-000ad65038b8" />
 
 ## ⚙️ Configuração
 
