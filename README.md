@@ -74,7 +74,7 @@ python manage.py runserver
 
 - Cada estado possui uma lista de cidades obtidas via API do IBGE.<br>
 
-- Cada estado possui dois pontos turísticos cadastrados manualmente via `fixtures`.<br>
+- Cada estado possui dois pontos turísticos cadastrados manualmente via fixtures, em `pontos_turisticos.json`.<br>
 
 - As imagens e descrições dos estados podem ser alteradas no fixture `estados.json`.<br>
 
