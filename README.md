@@ -67,7 +67,7 @@ python manage.py runserver
 - Editar —> http://127.0.0.1:8000/estados/id/editar/<br>
 
 - Deletar —> http://127.0.0.1:8000/estados/id/deletar/<br>
-<br>Selecionar utilizando a `interface` ou o `id` correspondente.
+<br>Navegar utilizando a `interface` ou o `id` correspondente.
 
 
 ## ℹ️ Informações
