@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Excluir Estado{% endblock %}
+
+{% block content %}
+<h2 class="titulo-excluir">Excluir Estado</h2>
+
+<p>Tem certeza que deseja excluir o estado <strong>{{ estado.nome }}</strong>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button class="botao-confirmar" type="submit">Sim, excluir</button>
+    <a class="botao-voltar" href="{% url 'estado_list' %}">Cancelar</a>
+</form>
+{% endblock %}

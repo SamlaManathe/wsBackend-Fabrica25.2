@@ -1,0 +1,217 @@
+
+.cabecalho {
+    background-color: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.menu-navegacao a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.menu-navegacao a:hover {
+    text-decoration: underline;
+}
+
+.conteudo-principal {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.titulo-lista,
+.titulo-detalhe,
+.titulo-formulario,
+.titulo-excluir,
+.titulo-municipios
+.titulo-pontos {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 26px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.tabela-estados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-estados th,
+.tabela-estados td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-estados th {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.tabela-estados tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.botao-detalhe,
+.botao-editar,
+.botao-deletar,
+.botao-voltar,
+.botao-enviar,
+.botao-confirmar {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-detalhe {
+    background-color: #007bff;
+}
+.botao-detalhe:hover {
+    background-color: #0056b3;
+}
+
+.botao-editar {
+    background-color: #ffc107;
+    color: #333;
+}
+.botao-editar:hover {
+    background-color: #e0a800;
+}
+
+.botao-deletar {
+    background-color: #dc3545;
+}
+.botao-deletar:hover {
+    background-color: #a71d2a;
+}
+
+.botao-voltar {
+    background-color: #6c757d;
+}
+.botao-voltar:hover {
+    background-color: #5a6268;
+}
+
+.botao-enviar {
+    background-color: #28a745;
+}
+.botao-enviar:hover {
+    background-color: #1e7e34;
+}
+
+.botao-confirmar {
+    background-color: #dc3545;
+}
+.botao-confirmar:hover {
+    background-color: #a71d2a;
+}
+
+.detalhes-estado {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.detalhes-estado p {
+    margin: 8px 0;
+}
+
+.detalhes-estado img.imagem-estado {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.lista-municipios,
+.lista-pontos {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.lista-pontos li {
+    margin-bottom: 6px;
+}
+
+.formulario-estado input[type="text"],
+.formulario-estado input[type="file"],
+.formulario-estado textarea,
+.formulario-estado select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formulario-estado input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.formulario-estado textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+.form-pesquisa input[type="text"] {
+    padding: 6px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-pesquisa button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-pesquisa button:hover {
+    background-color: #0056b3;
+}
+
+.rodape {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}

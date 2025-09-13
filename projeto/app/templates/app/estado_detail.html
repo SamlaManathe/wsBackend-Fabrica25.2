@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Detalhes do Estado{% endblock %}
+
+{% block content %}
+<h2 class="titulo-detalhe">{{ estado.nome }} ({{ estado.sigla }})</h2>
+
+<div class="detalhes-estado">
+    <p><strong>Região:</strong> {{ regiao_nome }}</p>
+    <p><strong>Descrição:</strong> {{ estado.descricao }}</p>
+    {% if estado.imagem %}
+    <img class="imagem-estado" src="{{ estado.imagem }}" alt="Imagem de {{ estado.nome }}">
+    {% endif %}
+</div>
+
+<h3 class="titulo-pontos">Pontos Turísticos</h3>
+<ul class="lista-pontos">
+    {% for ponto in pontos %}
+    <li>{{ ponto.nome }}</li>
+    {% empty %}
+    <li>Nenhum ponto turístico cadastrado.</li>
+    {% endfor %}
+</ul>
+
+<h3 class="titulo-municipios">Cidades do Estado</h3>
+<ul class="lista-municipios">
+    {% for municipio in municipios %}
+    <li>{{ municipio.nome }}</li>
+    {% empty %}
+    <li>Nenhuma cidade encontrada.</li>
+    {% endfor %}
+</ul>
+
+<a class="botao-voltar" href="{% url 'estado_list' %}">Voltar para a lista</a>
+{% endblock %}

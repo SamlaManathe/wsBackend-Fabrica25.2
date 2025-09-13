@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Sistema de Estados{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'app/style/style.css' %}">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo-principal">Sistema de Estados</h1>
+        <nav class="menu-navegacao">
+            <a href="{% url 'estado_list' %}">Listar Estados</a> |
+            <a href="{% url 'estado_create' %}">Adicionar Estado</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        {% block content %}
+        {% endblock %}
+    </main><br>
+
+    <footer class="rodape">
+        &copy; 2025 - Sistema de Estados
+    </footer>
+</body>
+</html>

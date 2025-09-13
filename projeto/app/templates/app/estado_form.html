@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Formulário de Estado{% endblock %}
+
+{% block content %}
+<h2 class="titulo-formulario">{% if estado %}Editar Estado{% else %}Adicionar Estado{% endif %}</h2>
+
+<form class="formulario-estado" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="botao-enviar" type="submit">{% if estado %}Atualizar{% else %}Salvar{% endif %}</button>
+</form>
+
+<a class="botao-voltar" href="{% url 'estado_list' %}">Voltar para a lista</a>
+{% endblock %}

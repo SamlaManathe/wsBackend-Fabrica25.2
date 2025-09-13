@@ -1,0 +1,41 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Lista de Estados{% endblock %}
+
+{% block content %}
+<h2 class="titulo-lista">Lista de Estados</h2>
+
+<form method="get" class="form-pesquisa">
+    <input type="text" name="q" placeholder="Pesquisar estado..." value="{{ request.GET.q }}">
+    <button type="submit">Pesquisar</button>
+</form><br>
+
+<table class="tabela-estados">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Sigla</th>
+            <th>Região</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for estado in estados %}
+        <tr>
+            <td>{{ estado.nome }}</td>
+            <td>{{ estado.sigla }}</td>
+            <td>{{ estado.regiao }}</td>
+            <td>
+                <a class="botao-detalhe" href="{% url 'estado_detail' estado.pk %}">Detalhes</a>
+                <a class="botao-editar" href="{% url 'estado_update' estado.pk %}">Editar</a>
+                <a class="botao-deletar" href="{% url 'estado_delete' estado.pk %}">Deletar</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">Nenhum estado cadastrado.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
