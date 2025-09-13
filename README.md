@@ -1,4 +1,4 @@
-# Workshop Back-End (Fábrica de Sofware, 2025.2)
+# Desafio Workshop Back-End 2025.2 - Fábrica de Sofware
 
 ## 🌏 Projeto Django: Estados e Turismo
 
