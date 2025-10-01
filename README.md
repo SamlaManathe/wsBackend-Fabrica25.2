@@ -41,7 +41,7 @@ python manage.py migrate
 python manage.py loaddata estados.json
 ```
 ```bash
-python manage.py loaddata pontos_turisticos.
+python manage.py loaddata pontos_turisticos.json
 ```
 **Passo 7:** Rodar o servidor
 ```bash
